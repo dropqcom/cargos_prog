@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="915.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <children>
+      <Label layoutX="43.0" layoutY="51.0" text="ADD CARGO">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="656.0" layoutY="40.0" text="STORAGE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cargoTypeBox" layoutX="44.0" layoutY="85.0" onAction="#onCargoTypeBoxSelected" prefHeight="26.0" prefWidth="185.0" promptText="Choose Cargo Typ" />
+      <ListView fx:id="listView" layoutX="416.0" layoutY="85.0" prefHeight="507.0" prefWidth="566.0" />
+      <TextField fx:id="customerTextBox" layoutX="44.0" layoutY="131.0" prefHeight="26.0" prefWidth="185.0" />
+      <Label layoutX="243.0" layoutY="134.0" prefHeight="21.0" prefWidth="124.0" text="Customer Name" />
+      <Label fx:id="durationOfCargo" layoutX="243.0" layoutY="226.0" prefHeight="16.0" prefWidth="99.0" text="Duration" />
+      <Label fx:id="valueOfCargo" layoutX="243.0" layoutY="179.0" text="Value" />
+      <TextField fx:id="valueTextBox" layoutX="44.0" layoutY="174.0" prefHeight="26.0" prefWidth="185.0" />
+      <TextField fx:id="durationTextBox" layoutX="44.0" layoutY="221.0" prefHeight="26.0" prefWidth="185.0" />
+      <CheckBox fx:id="explosiveCheckBox" layoutX="44.0" layoutY="272.0" mnemonicParsing="false" text="Explosive" />
+      <CheckBox fx:id="flammableCheckBox" layoutX="43.0" layoutY="307.0" mnemonicParsing="false" text="Flammable" />
+      <CheckBox fx:id="radioactiveCheckBox" layoutX="175.0" layoutY="307.0" mnemonicParsing="false" text="Radioactive" />
+      <CheckBox fx:id="toxicCheckBox" layoutX="175.0" layoutY="272.0" mnemonicParsing="false" text="Toxic" />
+      <CheckBox fx:id="fragileCheckBox" layoutX="44.0" layoutY="339.0" mnemonicParsing="false" text="Fragile" />
+      <CheckBox fx:id="pressurizedCheckBox" layoutX="176.0" layoutY="339.0" mnemonicParsing="false" text="Pressurized" />
+      <Button fx:id="storeCargoButton" layoutX="44.0" layoutY="367.0" mnemonicParsing="false" onAction="#onStoreCargoClick" prefHeight="26.0" prefWidth="185.0" text="Store Cargo" />
+      <Label layoutX="43.0" layoutY="418.0" text="DELETE CARGO">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="positionTextBox" layoutX="45.0" layoutY="445.0" />
+      <Label layoutX="236.0" layoutY="450.0" text="Position" />
+      <Button fx:id="deleteCargoButton" layoutX="45.0" layoutY="481.0" mnemonicParsing="false" onAction="#onDeleteCargoClick" prefHeight="26.0" prefWidth="171.0" text="Delete Cargo" />
+      <Label layoutX="46.0" layoutY="533.0" prefHeight="26.0" prefWidth="134.0" text="Set InspectionDate" />
+      <Label layoutX="226.0" layoutY="564.0" prefHeight="16.0" prefWidth="59.0" text="Position" />
+      <TextField fx:id="positionTextBoxInspectionDate" layoutX="45.0" layoutY="559.0" />
+      <Button fx:id="setInspectionDate" layoutX="45.0" layoutY="602.0" mnemonicParsing="false" onAction="#onSetInspectionDateClick" prefHeight="26.0" prefWidth="171.0" text="Set InspectionDate" />
+      <Label layoutX="46.0" layoutY="654.0" prefHeight="16.0" prefWidth="134.0" text="Delete Customer" />
+      <TextField fx:id="deleteCustomerTextBox" layoutX="45.0" layoutY="678.0" />
+      <Label layoutX="224.0" layoutY="683.0" prefHeight="16.0" prefWidth="112.0" text="Customer Name" />
+      <Button fx:id="deleteCustomerButton" layoutX="45.0" layoutY="714.0" mnemonicParsing="false" onAction="#onDeleteCustomerClick" prefHeight="26.0" prefWidth="171.0" text="Delete Customer" />
+      <Label layoutX="42.0" layoutY="764.0" text="Save/LoadJOS" />
+      <Button fx:id="saveJOSButton" layoutX="42.0" layoutY="794.0" mnemonicParsing="false" onAction="#onSaveJOSButtonClick" text="Save" />
+      <Button fx:id="loadJOSButton" layoutX="42.0" layoutY="834.0" mnemonicParsing="false" onAction="#onLoadJOSButtonClick" text="Load" />
+      <Label layoutX="176.0" layoutY="764.0" prefHeight="16.0" prefWidth="134.0" text="Save/Load JBP" />
+      <Button fx:id="saveJBPButton" layoutX="174.0" layoutY="794.0" mnemonicParsing="false" onAction="#onSaveJBPButtonClick" text="Save" />
+      <Button fx:id="loadJBPButton" layoutX="174.0" layoutY="834.0" mnemonicParsing="false" onAction="#onLoadJBPButtonClick" text="Load" />
+   </children>
+</AnchorPane>

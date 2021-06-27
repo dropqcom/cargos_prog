@@ -1,0 +1,18 @@
+package log;
+
+public enum LogTyp {
+    ADD_OBSERVER,
+    REMOVE_OBSERVER,
+    ADD_LISTENER,
+    REMOVE_LISTENER,
+    SHOW_CARGO,
+    SAVE_JOS,
+    LOAD_JOS,
+    LOAD_JBP,
+    GET_HAZARD,
+    GET_NON_HAZARD,
+    SAVE_JBP,
+    SET_INSPECTION,
+    SHOW_CUSTOMER_CARGO,
+
+}
